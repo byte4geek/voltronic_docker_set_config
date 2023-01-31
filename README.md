@@ -1,7 +1,7 @@
 # voltronic_docker_set_config
 Set inverter.conf file at boot based on device vendor ID for voltronic docker by ned-kelly / docker-voltronic-homeassistant
 
-this scipt is made for https://github.com/ned-kelly/docker-voltronic-homeassistant and fork https://github.com/catalinbordan/docker-voltronic-homeassistant
+this script is made for https://github.com/ned-kelly/docker-voltronic-homeassistant and fork https://github.com/catalinbordan/docker-voltronic-homeassistant
 
 If you use two usb2serial adapters on your raspberry it sometimes happens that on reboot the two devices are inverted between USB0 and USB1, this script launched at boot checks the links created according to the procedure described below and replaces the inverter.conf file with the correct device.
 
@@ -43,6 +43,7 @@ lrwxrwxrwx 1 root root           7 Jan 30 00:07 myUSBseplos -> ttyUSB0
 
 # Install the script
 
+assuming you are skilled with linux env, any damage on you system is at your risk.
 assuming your user is "pi"
 assuming docker voltronic installation folder is /opt/ha-inverter-mqtt-agent
 ```
