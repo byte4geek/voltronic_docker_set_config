@@ -40,7 +40,6 @@ lrwxrwxrwx 1 root root           7 Jan 30 00:07 myUSBinverter -> ttyUSB1
 lrwxrwxrwx 1 root root           7 Jan 30 00:07 myUSBseplos -> ttyUSB0
 
 ``` 
--------------------------------------------------
 
 # Install the script
 
