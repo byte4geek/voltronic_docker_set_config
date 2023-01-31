@@ -43,14 +43,14 @@ lrwxrwxrwx 1 root root           7 Jan 30 00:07 myUSBseplos -> ttyUSB0
 
 # Install the script
 
-assuming you are skilled with linux env, any damage on you system is at your risk.
+###### assuming you are skilled with linux env, any damage on you system is at your risk.
+
 assuming your user is "pi"
 assuming docker voltronic installation folder is /opt/ha-inverter-mqtt-agent
 ```
-mkdir scripts
-cd scripts
+cd ~
 git clone https://github.com/byte4geek/voltronic_docker_set_config
-chmod 700 set_config_inverter.sh
+chmod 700 voltronic_docker_set_config/set_config_inverter.sh
 
 sudo cp -p /opt/ha-inverter-mqtt-agent/config/inverter.conf /opt/ha-inverter-mqtt-agent/config/inverter_USB0.conf
 sudo cp -p /opt/ha-inverter-mqtt-agent/config/inverter.conf /opt/ha-inverter-mqtt-agent/config/inverter_USB1.conf
@@ -70,7 +70,7 @@ crontab -e
 ```
 and add at bottom of file the command:
 ```
-nohup sudo /home/pi/scripts/set_config_inverter.sh &
+nohup sudo /home/pi/voltronic_docker_set_config/set_config_inverter.sh &
 ```
 
 enjoy
