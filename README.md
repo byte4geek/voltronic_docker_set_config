@@ -58,7 +58,7 @@ sudo cp -p /opt/ha-inverter-mqtt-agent/config/inverter.conf /opt/ha-inverter-mqt
 edit the file /opt/ha-inverter-mqtt-agent/config/inverter_USB0.conf and set /dev/ttyUSB0 as the device;
 edit the file /opt/ha-inverter-mqtt-agent/config/inverter_USB1.conf and set /dev/ttyUSB1 as the device;
 
-if you use a different folder for you voltronic docker change the path above and change the path iside the script:,
+if you use a different folder for you voltronic docker change the path above inside the script:
 ```
 LOGNAME=/opt/ha-inverter-mqtt-agent/set_config.log
 CONFIG_USB0=/opt/ha-inverter-mqtt-agent/config/inverter_USB0.conf
